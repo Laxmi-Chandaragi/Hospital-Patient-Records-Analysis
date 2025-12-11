@@ -1,7 +1,7 @@
 # Hospital-Patient-Records-Analysis
 
-Problem Statement
-Modern healthcare systems generate large amounts of patient, clinical, and financial records. However, hospitals often struggle to convert this raw data into meaningful insights that improve patient care, operational efficiency, and financial decision-making.
+Problem Statement: 
+Modern healthcare systems generate large amounts of patient, clinical, and financial records. However, hospitals often struggle to convert raw data into meaningful insights that improve patient care, operational efficiency, and financial decision-making.
 
 This project aims to analyze hospital encounter-level data using SQL to uncover critical insights related to patient behavior, procedures, payer coverage, and healthcare utilization patterns.
 
