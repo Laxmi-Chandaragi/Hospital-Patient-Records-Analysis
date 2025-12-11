@@ -1,0 +1,15 @@
+SELECT * FROM patients LIMIT 10;
+SELECT 
+    SUM(CASE WHEN FIRST IS NULL THEN 1 END) AS missing_first,
+    SUM(CASE WHEN LAST IS NULL THEN 1 END) AS missing_last,
+    SUM(CASE WHEN BIRTHDATE IS NULL THEN 1 END) AS missing_birthdate
+FROM patients;
+
+SELECT Id, COUNT(*)
+FROM patients
+GROUP BY Id
+HAVING COUNT(*) >1;
+
+SELECT *
+FROM patients
+WHERE BIRTHDATE > CURDATE();

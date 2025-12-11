@@ -1,0 +1,25 @@
+SELECT age,
+       COUNT(*) AS count
+FROM (
+   SELECT TIMESTAMPDIFF(YEAR, BIRTHDATE, CURDATE()) AS age
+   FROM patients
+   ) AS t
+GROUP BY age
+ORDER BY age;   
+
+SELECT GENDER, COUNT(*) AS count
+FROM patients
+GROUP BY GENDER;
+
+SELECT 
+    DESCRIPTION , COUNT(*) AS total_performed
+FROM procedures
+GROUP BY DESCRIPTION 
+ORDER BY total_performed DESC;
+
+SELECT 
+   REASONDESCRIPTION,
+   COUNT(*) AS count
+FROM encounters
+GROUP BY REASONDESCRIPTION
+ORDER BY count DESC;
